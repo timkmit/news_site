@@ -11,7 +11,8 @@ body {
 .header{
     box-shadow: 0 0 5px;
     height: 150px;
-    width: 100%;
+    width: 100vw;
+
     background: linear-gradient(45deg, #EECFBA, #C5DDE8);
     z-index: 1;
     
