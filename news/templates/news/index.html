@@ -10,7 +10,8 @@
 
   <body>
     <div class="header">
-      <a class="logo" href="{%url 'news:index'%}" style="text-decoration: none;">News ToDay</a>
+      <a class="logo" href="{%url 'news:index'%}">News ToDay</a>
+      <!--<a class="logo" href="{%url 'news:index'%}">News ToDay</a>-->
     </div>
     <div class="content">
     {%for item in news%}
@@ -24,6 +25,7 @@
           <div class="info">
             <p class="card-text text-dark">{{item.title_content}}</p>
             <a href="{% url 'news:detail' item.id%}" class="btn btn-dark text-whit">read more..</a>
+            <div class="card-footer text-dark"><br>{{item.created_ad}}-{{item.autor}} </div>
           </div>
           </div>
     {%endfor%}
@@ -33,6 +35,21 @@
     <div id="fixedDiv" class="fixed fixed-top">
       contacts:timengalytchev@mail.ru
   </div>
+
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div >
   </body>
 </html>
 <!-- {%for item in news%}
